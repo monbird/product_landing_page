@@ -110,8 +110,8 @@ html {
 }
 
 .service-image {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .option-title {
@@ -122,6 +122,26 @@ html {
     text-align: center;
 }
 
+
+/* Book button */
+
+#appointment button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+    font-size: 25px;
+    border-radius: 50px;
+    border-color: #000;
+    border-width: 6px;
+    color: #000;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+#appointment button:hover {
+    background-color: #999;
+    color: white;
+}
 
  /* Footer */
 
