@@ -27,9 +27,10 @@ body {
     background-color: rgba(255, 255, 255, 0.7);
     line-height: 1.5;
 }
- .section {
-     padding-top: 50px;
- }
+
+.section {
+    padding-top: 50px;
+}
 
 /* NAVIGATION BAR */
 
@@ -128,7 +129,6 @@ body {
     position: relative;
     width: 20%;
     height: 400px;
-    min-width: 140px;
     padding-top: 50px;
 }
 
@@ -140,12 +140,12 @@ body {
 }
 
 .service-image {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
 .option-desc {
-    line-height: 1.2;
+    line-height: 1.35;
 }
 
 .option-title, .option-desc, .price {
@@ -234,11 +234,17 @@ input[type=submit] {
  }
  
 
+/* MEDIA QUERIES */
+
 @media only screen and (max-device-width: 600px) {
+    body {
+        font-size: 22px;
+    }
+
     #nav-bar {
         position: absolute;
         top: 0;
-        font-size: 30px;
+        font-size: 36px;
     }
 
     #nav-bar li {
@@ -246,14 +252,33 @@ input[type=submit] {
     }
 
     #header-img {
-        width: 80%;
+        width: 65%;
+        height: auto;
     }
 
     .logo {
         top: 200px;
     }
 
+    .logo-brand {
+        font-size: 48px;
+        top: 25%;
+    }
+
+    .logo-brand2 {
+        font-size: 28px;
+    }
+
+    .services-flex-container div {
+        width: 40%;
+	height: auto;
+    }
+
+    .services-flex-container div .price {
+       position: relative;
+    }
+
     iframe {
-        width: 90%;
+        width: 62%;
     }
 }
