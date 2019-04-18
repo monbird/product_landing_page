@@ -3,9 +3,9 @@
 
 html {
     scroll-behavior: smooth;
-   }
+}
  
- body {
+body {
      background-color: ivory;
      background-image: url(./qtq80-dTX7H9.jpeg);
      background-repeat: no-repeat;
@@ -14,9 +14,25 @@ html {
      background-attachment: fixed;
      margin: 0;
      font-family: 'Roboto';
+     font-size: 17px;
+}
+
+/* GENERIC SECTION CONTENT */
+
+.text-block {
+    margin: 30px auto;
+    width: 80%;
+    padding: 10px 20px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+ .section {
+     padding-top: 50px;
  }
 
 /* NAVIGATION BAR */
+
 #nav-bar {
     position: fixed;
     top: 0;
@@ -32,28 +48,28 @@ html {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  #nav-bar li {
+#nav-bar li {
     display: inline-block; 
-  }
+}
   
-  #nav-bar .nav-link {
+#nav-bar .nav-link {
     display: block;
     padding: 9px 16px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-  }
+}
 
-  #nav-bar .nav-link:hover {
-      background-color: #AAA;
-      opacity: 0.99;
-  }
+#nav-bar .nav-link:hover {
+    background-color: #AAA;
+    opacity: 0.99;
+}
 
 
-/* Logo */
+/* LOGO */
 
 .logo {
     position: relative;
@@ -83,10 +99,11 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     font-style: italic;
+    font-size: 17px;
 }  
 
 
- /* About us */
+ /* ABOUT US */
 
  iframe {
     display: block;
@@ -96,17 +113,30 @@ html {
 }
 
 
-/* Services section */
+/* SERVICES */
 
 .services-flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: center;
+    padding-top: 0px;
 }
 
 .services-flex-container div {
+    position: relative;
     width: 20%;
+    height: 400px;
+    min-width: 140px;
+    padding-top: 50px;
+}
+
+.services-flex-container div .price {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    margin-bottom: 5px;
 }
 
 .service-image {
@@ -114,16 +144,17 @@ html {
     height: auto;
 }
 
-.option-title {
-    text-align: center;
-}
-
 .option-desc {
+    line-height: 1.2;
+}
+
+.option-title, .option-desc, .price {
     text-align: center;
+    width: 100%;
 }
 
 
-/* Book button */
+/* BOOK BUTTON */
 
 #appointment button {
     display: block;
@@ -140,10 +171,44 @@ html {
 
 #appointment button:hover {
     background-color: #999;
-    color: white;
+    color: #FFF;
 }
 
- /* Footer */
+
+/* NEWSLETTER  */
+
+#newsletter {
+    padding-top: 25px;
+    text-align: center;
+}
+
+#newsletter .text-block {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+input[type=email] {
+    height: 30px;
+    width: 200px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid #525860;
+}
+
+input[type=submit] {
+    height: 25px;
+    width: 70px;
+    font-size: 12px;
+    border-radius: 50px;
+    border-color: #000;
+    border-width: 2.5px;
+    color: #000;
+    background-color: #FFF;
+    cursor: pointer;
+}
+
+ /* FOOTER */
 
  footer ul {
     list-style-type: none;
@@ -155,6 +220,7 @@ html {
 
  footer ul li {
      padding: 5px 10px;
+     font-size: 13px;
  }
 
  footer ul li:last-child {
@@ -167,22 +233,27 @@ html {
     color:#4837c6;
  }
 
+ /* @media (max-width: 750px) { */
+@media only screen and (max-width: 600px) {
+    #nav-bar {
+        position: absolute;
+        top: 0;
+        font-size: 30px;
+    }
 
-/* Generic section content */
+    #nav-bar li {
+        display: block; 
+    }
 
-.text-block {
-    margin: 30px auto;
-    width: 80%;
-    padding: 10px 20px;
-    text-align: justify;
-    background-color: rgba(255, 255, 255, 0.7);
-    line-height: 1.35;
+    #header-img {
+        width: 80%;
+    }
+
+    .logo {
+        top: 200px;
+    }
+
+    iframe {
+        width: 90%;
+    }
 }
- .section {
-     padding-top: 50px;
- }
-
-
- /* @media () {
-
-} */
