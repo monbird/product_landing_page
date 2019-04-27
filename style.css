@@ -7,7 +7,7 @@ html {
  
 body {
      background-color: ivory;
-     background-image: url(./qtq80-dTX7H9.jpeg);
+     background-image: url("./background-img.jpeg");
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
@@ -107,7 +107,7 @@ body {
 
  iframe {
     display: block;
-    margin: 0 auto;
+    margin: 75px auto;
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.7);
 }
@@ -232,9 +232,9 @@ input[type=submit] {
     text-decoration: none;
     color:#4837c6;
  }
+ 
 
- /* @media (max-width: 750px) { */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 600px) {
     #nav-bar {
         position: absolute;
         top: 0;
