@@ -127,16 +127,18 @@ body {
 
 .services-flex-container div {
     position: relative;
-    width: 20%;
-    height: 400px;
+    width: 250px;
     padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 .services-flex-container div .price {
     display: block;
     position: absolute;
-    bottom: 1px;
+    bottom: 50px;
     margin-bottom: 5px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .service-image {
@@ -146,6 +148,7 @@ body {
 
 .option-desc {
     line-height: 1.35;
+    padding-bottom: 10px;
 }
 
 .option-title, .option-desc, .price {
@@ -271,7 +274,7 @@ input[type=submit] {
 
     .services-flex-container div {
         width: 40%;
-	height: auto;
+	    height: auto;
     }
 
     .services-flex-container div .price {
