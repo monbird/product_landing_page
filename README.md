@@ -5,4 +5,4 @@ This is the third of the Responsive Web Design Projects in Free Code Camp and th
 
 The page could be used as an online presence of a pet spa saloon that advertises its available services.
 
-You can find a list of requirements and further information on the project [here](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) and you can view the completed project by clicking [here](http://monptasz.com/product-landing-page).
+You can find a list of requirements and further information on the project [here](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) and you can view the completed project by clicking [here](http://monbird.com/product-landing-page).
